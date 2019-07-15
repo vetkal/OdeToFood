@@ -1,17 +1,82 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<head>
+    <title>Contact</title>
+    <meta name="description" content="Awesome blog by Traversy Media">
+    <meta name="keywords" content="web design blog, web dev blog, traversy media">
+    <style type="text/css">
+        #main-header {
+            text-align: center;
+            background-color: orange;
+            color: white;
+            padding: 15px;
+        }
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        #main-footer {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    <link rel="stylesheet" href="~/Content/vetle-style.css" />
+</head>
+<body>
+    <header id="main-header">
+        <h2>@ViewBag.Title.</h2>
+    </header>
+    <h3>@ViewBag.Message</h3>
+
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    1
+                </th>
+                <th>
+                    2
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    haha
+                </td>
+                <td>
+                    laal
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <img src="~/Images/food.jpg" alt="food" width="500">
+    <hr />
+    <div id="results">
+        <button id="toggleButton">Hide</button>
+        <div id="resultList">
+            Some random text.
+            mooore text.
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/Vetle-script.js"></script>
+    
+
+</body>

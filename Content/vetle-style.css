@@ -1,0 +1,15 @@
+﻿/* This is my styles */
+
+
+table {
+    background-color: lightblue; 
+    border: solid 2px black;
+    padding: 10px 10px;
+    float: right;
+
+}
+
+address a {
+    color: green;
+    font-family: 'Comic Sans MS', 'Times New Roman', Arial;
+}
